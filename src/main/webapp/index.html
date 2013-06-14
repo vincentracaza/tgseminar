@@ -16,18 +16,46 @@
 </head>
 <body>
 
+<div ng-view>
+</div>
+
+<script type="text/ng-template" id="/template/sample.html">
+    <div ng-controller="SampleTestController">
+        <input type="text" ng-model="name">
+        {{name}}
+    </div>
+</script>
+
+<script type="text/ng-template" id="/template/main.html">
+    <p>
+        メインです。<br>
+        <a ng-href="/sample">サンプル</a>
+    </p>
+</script>
+
 <div ng-controller="TodoController">
-  TODO List
+    TODO List
     <div ng-show="todos.length == 0">
         TODO is nothing.
     </div>
 
-    <div ng-repeat="todo in todos">
-        {{todo.content}}
+    <div>
+        <li ng-repeat="todo in todos">
+            {{$index + 1}}
+            {{todo.content}}
+            <input type="text" ng-model="modifiedValue" placeholder="NewValue">
+            <button ng-click="remove($index)">Burahin</button>
+            <button ng-click="modify($index, modifiedValue)">Mag-edit</button>
+        </li>
     </div>
 
     <input type="text" ng-model="newContent" placeholder="TODO?">
     <button ng-click="add()">Add Todo!</button>
+
+</div>
+
+
+
 </div>
 
 

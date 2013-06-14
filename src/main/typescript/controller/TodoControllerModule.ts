@@ -12,23 +12,34 @@ module Todo {
         todos:Model.Todo[];
 
         add:()=>void;
+        remove:(index)=>void;
+        modify:(index, modifiedValue)=>void;
         newContent:string;
     }
 
     export class Controller {
         constructor(public $scope:Scope) {
             this.$scope.todos = [
-                new Model.Todo("Hello my todo."),
-                new Model.Todo("Hello my todo2.")
+                new Model.Todo("Hello my todo.")
             ];
 
             this.$scope.add = () => this.add();
+            this.$scope.remove = (index) => this.remove(index);
+            this.$scope.modify = (index, modifiedValue) => this.modify(index, modifiedValue);
         }
 
         add():void {
             var content = this.$scope.newContent;
             var todo = new Model.Todo(content);
             this.$scope.todos.push(todo);
+        }
+
+        remove(index):void {
+            this.$scope.todos.splice(index, 1);
+        }
+
+        modify(index,modifiedValue):void {
+            this.$scope.todos[index] = new Model.Todo(modifiedValue);
         }
     }
 }

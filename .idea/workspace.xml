@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e559178-1083-493b-abc0-8e165029eed5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/typescript/ControllerSpec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/typescript/MainSpec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/typescript/ModelSpec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/typescript/controller/SampleControllerModuleSpec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/typescript/service/SampleServiceModuleSpec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/typescript/ServiceSpec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/typescript/SpecRunner.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/typescript/controller/TodoControllerModuleSpec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/typescript/main-spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/typescript/testdata.js" />
-      <change type="DELETED" beforePath="C:\Users\User-Hp002\GAESeminar\seminar02\src\main\webapp\scripts\Controller.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User-Hp002\GAESeminar\seminar02\src\main\webapp\scripts\Ignite.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User-Hp002\GAESeminar\seminar02\src\main\webapp\scripts\Model.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User-Hp002\GAESeminar\seminar02\src\main\webapp\scripts\Service.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User-Hp002\GAESeminar\seminar02\src\main\webapp\scripts\controller\SampleControllerModule.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User-Hp002\GAESeminar\seminar02\src\main\webapp\scripts\controller\TodoControllerModule.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User-Hp002\GAESeminar\seminar02\src\main\webapp\scripts\main.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User-Hp002\GAESeminar\seminar02\src\main\webapp\scripts\service\SampleServiceModule.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User-Hp002\GAESeminar\seminar02\src\main\webapp\scripts\source.js.map" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.apt_generated/tgseminar/meta/Slim3ModelMeta.java" afterPath="$PROJECT_DIR$/.apt_generated/tgseminar/meta/Slim3ModelMeta.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/typescript/controller/TodoControllerModule.ts" afterPath="$PROJECT_DIR$/src/main/typescript/controller/TodoControllerModule.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-results.xml" afterPath="$PROJECT_DIR$/test-results.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="1e559178-1083-493b-abc0-8e165029eed5" name="Default" comment="" />
     <ignored path="seminar02.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -96,7 +71,7 @@
       <file leaf-file-name="TodoControllerModuleSpec.ts" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/typescript/controller/TodoControllerModuleSpec.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="69" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.3634497">
+            <state line="37" column="5" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.3634497">
               <folding />
             </state>
           </provider>
@@ -672,7 +647,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/typescript/controller/TodoControllerModuleSpec.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="69" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.3634497">
+        <state line="37" column="5" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.3634497">
           <folding />
         </state>
       </provider>

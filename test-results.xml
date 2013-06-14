@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <testsuites>
-  <testsuite name="PhantomJS 1.9 (Windows)" package="" timestamp="2013-06-14T03:16:23" id="0" hostname="PC-Hp002" tests="3" errors="0" failures="0" time="0.016">
+  <testsuite name="PhantomJS 1.9 (Windows)" package="" timestamp="2013-06-14T07:10:22" id="0" hostname="PC-Hp002" tests="3" errors="0" failures="0" time="0.015">
     <properties>
       <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.1 Safari/534.34"/>
     </properties>
-    <testcase name="testメソッドのテスト" time="0.012" classname="PhantomJS 1.9 (Windows).Serviceの Service_SampleServiceの"/>
+    <testcase name="testメソッドのテスト" time="0.011" classname="PhantomJS 1.9 (Windows).Serviceの Service_SampleServiceの"/>
     <testcase name="Controllerの作成" time="0.002" classname="PhantomJS 1.9 (Windows).Controllerの Sample_TestControllerの"/>
     <testcase name="Controllerの作成" time="0.002" classname="PhantomJS 1.9 (Windows).Controllerの Todo_Controllerの"/>
     <system-out><![CDATA[

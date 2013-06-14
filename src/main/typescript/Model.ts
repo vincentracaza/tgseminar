@@ -20,6 +20,16 @@ module Model {
 	}
 
     export class Todo{
-        constructor(public content:string ="Unknown"){}
+        id:number;
+        title:string;
+        createdAt:string;
+        createdBy:string;
+
+        constructor(data:any) {
+            this.id = data.id;
+            this.title = data.title;
+            this.createdAt = data.createdAt;
+            this.createdBy = data.createdBy;
+        }
     }
 }

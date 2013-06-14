@@ -5,6 +5,7 @@
 ///<reference path='../libs/DefinitelyTyped/angularjs/angular.d.ts' />
 
 ///<reference path='../Model.ts' />
+///<reference path='../Service.ts' />
 
 
 module Todo {
@@ -18,7 +19,7 @@ module Todo {
     }
 
     export class Controller {
-        constructor(public $scope:Scope) {
+        constructor(public $scope:Scope, public todoService:Service.TodoService) {
             this.$scope.todos = [
                 new Model.Todo("Hello my todo.")
             ];
@@ -26,11 +27,17 @@ module Todo {
             this.$scope.add = () => this.add();
             this.$scope.remove = (index) => this.remove(index);
             this.$scope.modify = (index, modifiedValue) => this.modify(index, modifiedValue);
+
+            this.todoService.getList()
+                .success((todos:Model.Todo[]) => {
+                    this.$scope.todos = todos;
+
+                });
         }
 
         add():void {
             var content = this.$scope.newContent;
-            var todo = new Model.Todo(content);
+            var todo = new Model.Todo({title:content});
             this.$scope.todos.push(todo);
         }
 
@@ -39,7 +46,7 @@ module Todo {
         }
 
         modify(index,modifiedValue):void {
-            this.$scope.todos[index] = new Model.Todo(modifiedValue);
+            this.$scope.todos[index] = new Model.Todo({title:modifiedValue});
         }
     }
 }

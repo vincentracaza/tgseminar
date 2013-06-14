@@ -1,0 +1,11 @@
+<!-- Indices written at Fri, 14 Jun 2013 06:33:52 UTC -->
+
+<datastore-indexes>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="ToDo" ancestor="false" source="auto">
+        <property name="createdBy" direction="asc"/>
+        <property name="createdAt" direction="desc"/>
+    </datastore-index>
+
+</datastore-indexes>

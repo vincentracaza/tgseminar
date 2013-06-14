@@ -42,7 +42,7 @@
     <div>
         <li ng-repeat="todo in todos">
             {{$index + 1}}
-            {{todo.content}}
+            {{todo.title}}
             <input type="text" ng-model="modifiedValue" placeholder="NewValue">
             <button ng-click="remove($index)">Burahin</button>
             <button ng-click="modify($index, modifiedValue)">Mag-edit</button>

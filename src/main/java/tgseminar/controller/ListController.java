@@ -35,7 +35,7 @@ public class ListController extends Controller {
 			map.put("id", result.getKey().getId());
 			map.put("createdBy", result.getProperty("createdBy"));
 			map.put("createdAt",result.getProperty("createdAt"));
-			
+			map.put("title", result.getProperty("title"));
 			listOfEntityMap.add(map);
 		}
 		

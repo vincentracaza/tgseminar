@@ -11,9 +11,11 @@ var Model;
     })();
     Model.Sample = Sample;    
     var Todo = (function () {
-        function Todo(content) {
-            if (typeof content === "undefined") { content = "Unknown"; }
-            this.content = content;
+        function Todo(data) {
+            this.id = data.id;
+            this.title = data.title;
+            this.createdAt = data.createdAt;
+            this.createdBy = data.createdBy;
         }
         return Todo;
     })();
@@ -56,8 +58,9 @@ var Sample;
 var Todo;
 (function (Todo) {
     var Controller = (function () {
-        function Controller($scope) {
+        function Controller($scope, todoService) {
             this.$scope = $scope;
+            this.todoService = todoService;
             var _this = this;
             this.$scope.todos = [
                 new Model.Todo("Hello my todo.")
@@ -71,23 +74,58 @@ var Todo;
             this.$scope.modify = function (index, modifiedValue) {
                 return _this.modify(index, modifiedValue);
             };
+            this.todoService.getList().success(function (todos) {
+                _this.$scope.todos = todos;
+            });
         }
         Controller.prototype.add = function () {
             var content = this.$scope.newContent;
-            var todo = new Model.Todo(content);
+            var todo = new Model.Todo({
+                title: content
+            });
             this.$scope.todos.push(todo);
         };
         Controller.prototype.remove = function (index) {
             this.$scope.todos.splice(index, 1);
         };
         Controller.prototype.modify = function (index, modifiedValue) {
-            this.$scope.todos[index] = new Model.Todo(modifiedValue);
+            this.$scope.todos[index] = new Model.Todo({
+                title: modifiedValue
+            });
         };
         return Controller;
     })();
     Todo.Controller = Controller;    
 })(Todo || (Todo = {}));
 'use strict';
+'use strict';
+var Service;
+(function (Service) {
+    var TodoService = (function () {
+        function TodoService($http) {
+            this.$http = $http;
+        }
+        TodoService.prototype.getList = function () {
+            var promise = this.$http.get("/list");
+            var wrapped = {
+                success: function (callback) {
+                    promise.success(function (data, status, headers, config) {
+                        var resultList = [];
+                        data.forEach(function (data) {
+                            resultList.push(new Model.Todo(data));
+                        });
+                        callback(resultList, status, headers, config);
+                    });
+                },
+                error: promise.error,
+                then: promise.then
+            };
+            return wrapped;
+        };
+        return TodoService;
+    })();
+    Service.TodoService = TodoService;    
+})(Service || (Service = {}));
 'use strict';
 var Module;
 (function (Module) {
@@ -108,6 +146,8 @@ var Module;
     angular.module("gae-standards.service", [], function () {
     }).factory("sampleService", function ($http) {
         return new Service.SampleService($http);
+    }).factory("todoService", function ($http) {
+        return new Service.TodoService($http);
     });
     angular.module("gae-standards.controller", [
         "gae-standards.service"
@@ -266,35 +306,24 @@ describe("Controllerの", function () {
             $scope = $injector.get("$rootScope").$new();
         });
         it("Controllerの作成", function () {
+            $httpBackend.expect("GET", "/list").respond(200, [
+                {
+                    title: "New Content"
+                }
+            ]);
             var controller = $controller(Todo.Controller, {
                 $scope: $scope
             });
+            $httpBackend.flush();
             expect($scope.todos.length).toBe(1);
             $scope.newContent = "NewContent1";
             controller.add();
             expect($scope.todos.length).toBe(2);
             expect($scope.todos[1]).toEqual({
-                content: "NewContent1"
+                title: "NewContent1"
             });
             controller.remove(1);
             expect($scope.todos.length).toBe(1);
-            $scope.newContent = "NewContent2";
-            controller.add();
-            expect($scope.todos.length).toBe(2);
-            expect($scope.todos[1]).toEqual({
-                content: "NewContent2"
-            });
-            $scope.newContent = "NewContent3";
-            controller.add();
-            expect($scope.todos.length).toBe(3);
-            expect($scope.todos[2]).toEqual({
-                content: "NewContent3"
-            });
-            controller.modify(1, "NewContent2_Edited");
-            expect($scope.todos.length).toBe(3);
-            expect($scope.todos[1]).toEqual({
-                content: "NewContent2_Edited"
-            });
         });
     });
 });

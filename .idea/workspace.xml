@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e559178-1083-493b-abc0-8e165029eed5" name="Default" comment="" />
+    <list default="true" id="1e559178-1083-493b-abc0-8e165029eed5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/typescript/service/TodoServiceModule.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/typescript/service/TodoServiceModuleSpec.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/tgseminar/controller/ListController.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/tgseminar/controller/ListController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tgseminar/controller/ListController.java" afterPath="$PROJECT_DIR$/src/main/java/tgseminar/controller/ListController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/typescript/Model.ts" afterPath="$PROJECT_DIR$/src/main/typescript/Model.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/typescript/Service.ts" afterPath="$PROJECT_DIR$/src/main/typescript/Service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/typescript/controller/TodoControllerModule.ts" afterPath="$PROJECT_DIR$/src/main/typescript/controller/TodoControllerModule.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/typescript/controller/TodoControllerModuleSpec.ts" afterPath="$PROJECT_DIR$/src/test/typescript/controller/TodoControllerModuleSpec.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/typescript/main-spec.js" afterPath="$PROJECT_DIR$/src/test/typescript/main-spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-results.xml" afterPath="$PROJECT_DIR$/test-results.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="seminar02.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,15 +36,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SampleControllerModule.ts" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/typescript/controller/SampleControllerModule.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="34" selection-start="409" selection-end="416" vertical-scroll-proportion="-10.88">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SampleControllerModuleSpec.ts" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/typescript/controller/SampleControllerModuleSpec.ts">
           <provider selected="true" editor-type-id="text-editor">
@@ -50,10 +54,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Model.ts" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/typescript/Model.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="34" selection-start="334" selection-end="334" vertical-scroll-proportion="-9.6">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TodoControllerModule.ts" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/typescript/controller/TodoControllerModule.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="48" selection-start="532" selection-end="532" vertical-scroll-proportion="-6.12">
+            <state line="36" column="0" selection-start="1002" selection-end="1002" vertical-scroll-proportion="-10.28">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TodoServiceModuleSpec.ts" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/typescript/service/TodoServiceModuleSpec.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="0" selection-start="990" selection-end="990" vertical-scroll-proportion="-12.56">
               <folding />
             </state>
           </provider>
@@ -62,7 +84,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="2" selection-start="1151" selection-end="1151" vertical-scroll-proportion="-9.461538">
+            <state line="44" column="24" selection-start="1200" selection-end="1200" vertical-scroll-proportion="-10.769231">
               <folding />
             </state>
           </provider>
@@ -71,19 +93,26 @@
       <file leaf-file-name="TodoControllerModuleSpec.ts" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/typescript/controller/TodoControllerModuleSpec.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="5" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.3634497">
+            <state line="40" column="15" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.52772075">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ControllerSpec.ts" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/typescript/ControllerSpec.ts">
+      <file leaf-file-name="SampleServiceModuleSpec.ts" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/typescript/service/SampleServiceModuleSpec.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="-1.36">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="17" column="27" selection-start="607" selection-end="607" vertical-scroll-proportion="-11.56">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TodoServiceModule.ts" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/typescript/service/TodoServiceModule.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="70" selection-start="753" selection-end="753" vertical-scroll-proportion="-12.32">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,16 +120,7 @@
       <file leaf-file-name="Service.ts" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/typescript/Service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="63.72">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ie.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/ie.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="14" column="15" selection-start="320" selection-end="320" vertical-scroll-proportion="18.24">
               <folding />
             </state>
           </provider>
@@ -124,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/src/main/typescript/Model.ts" />
         <option value="$PROJECT_DIR$/src/src/test/typescript/Model.ts" />
         <option value="$PROJECT_DIR$/src/src/test/typescript/controller/TodoControllerModule.ts" />
         <option value="$PROJECT_DIR$/src/src/main/typescript/Controller.ts" />
@@ -132,11 +151,14 @@
         <option value="$PROJECT_DIR$/src/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/src/main/typescript/Service.ts" />
         <option value="$PROJECT_DIR$/src/src/main/typescript/controller/TodoControllerModule.ts" />
-        <option value="$PROJECT_DIR$/src/main/typescript/Model.ts" />
         <option value="$PROJECT_DIR$/src/src/test/typescript/controller/TodoControllerModuleSpec.ts" />
         <option value="$PROJECT_DIR$/src/test/typescript/ControllerSpec.ts" />
-        <option value="$PROJECT_DIR$/src/main/typescript/controller/TodoControllerModule.ts" />
+        <option value="$PROJECT_DIR$/src/main/typescript/Service.ts" />
+        <option value="$PROJECT_DIR$/src/main/typescript/service/TodoServiceModule.ts" />
+        <option value="$PROJECT_DIR$/src/main/typescript/Model.ts" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/test/typescript/service/TodoServiceModuleSpec.ts" />
+        <option value="$PROJECT_DIR$/src/main/typescript/controller/TodoControllerModule.ts" />
         <option value="$PROJECT_DIR$/src/test/typescript/controller/TodoControllerModuleSpec.ts" />
       </list>
     </option>
@@ -273,6 +295,58 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seminar02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seminar02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="typescript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seminar02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seminar02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="typescript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -312,10 +386,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -362,24 +432,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="seminar02" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="seminar02" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -454,7 +506,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20923306" sideWeight="0.67077464" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26061058" sideWeight="0.67077464" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -548,23 +600,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/components/angular/angular.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7146" column="18" selection-start="220719" selection-end="220719" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scss/common/_utilities.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/typescript/Model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="1" selection-start="429" selection-end="429" vertical-scroll-proportion="-16.32">
           <folding />
         </state>
       </provider>
@@ -594,18 +632,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/ie.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/typescript/ControllerSpec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="-1.36">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -624,30 +655,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/typescript/Service.ts">
+    <entry file="file://$PROJECT_DIR$/src/main/typescript/service/TodoServiceModule.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="63.72">
+        <state line="22" column="70" selection-start="753" selection-end="753" vertical-scroll-proportion="-12.32">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/typescript/controller/TodoControllerModule.ts">
+    <entry file="file://$PROJECT_DIR$/src/main/typescript/Service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="48" selection-start="532" selection-end="532" vertical-scroll-proportion="-6.12">
+        <state line="14" column="15" selection-start="320" selection-end="320" vertical-scroll-proportion="18.24">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/typescript/Model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="34" selection-start="334" selection-end="334" vertical-scroll-proportion="-9.6">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="2" selection-start="1151" selection-end="1151" vertical-scroll-proportion="-9.461538">
+        <state line="44" column="24" selection-start="1200" selection-end="1200" vertical-scroll-proportion="-10.769231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/typescript/service/SampleServiceModuleSpec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="27" selection-start="607" selection-end="607" vertical-scroll-proportion="-11.56">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/typescript/controller/TodoControllerModule.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1002" selection-end="1002" vertical-scroll-proportion="-10.28">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/typescript/service/TodoServiceModuleSpec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="990" selection-end="990" vertical-scroll-proportion="-12.56">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/typescript/controller/TodoControllerModuleSpec.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="5" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.3634497">
+        <state line="40" column="15" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.52772075">
           <folding />
         </state>
       </provider>

@@ -2,6 +2,11 @@ package tgseminar.controller;
 
 import org.slim3.controller.Controller;
 import org.slim3.controller.Navigation;
+import org.slim3.datastore.Datastore;
+import org.slim3.datastore.EntityNotFoundRuntimeException;
+
+import com.google.appengine.api.datastore.Entity;
+import com.google.appengine.api.datastore.Key;
 
 public class UpdateController extends Controller {
 
@@ -27,6 +32,24 @@ public class UpdateController extends Controller {
 			response.setStatus(400);
 			return null;
 		}
+		
+		Key key = Datastore.createKey("ToDo", id);
+		Entity entity = Datastore.getOrNull(key);
+		
+		if (entity == null) {
+			response.setStatus(404);
+			return null;
+		}
+		
+//		Entity entity;
+//		try {
+//			entity = Datastore.get(key);
+//		} catch (EntityNotFoundRuntimeException e) {
+//			response.setStatus(404);
+//			return null;
+//		}
+		
+		
 		return null;
 	}
 

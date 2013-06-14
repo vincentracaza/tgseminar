@@ -7,6 +7,8 @@ import org.slim3.datastore.EntityNotFoundRuntimeException;
 
 import com.google.appengine.api.datastore.Entity;
 import com.google.appengine.api.datastore.Key;
+import com.google.appengine.api.users.User;
+import com.google.appengine.api.users.UserServiceFactory;
 
 public class UpdateController extends Controller {
 
@@ -41,6 +43,7 @@ public class UpdateController extends Controller {
 			return null;
 		}
 		
+		
 //		Entity entity;
 //		try {
 //			entity = Datastore.get(key);
@@ -49,6 +52,15 @@ public class UpdateController extends Controller {
 //			return null;
 //		}
 		
+		
+		String email = UserServiceFactory.getUserService().getCurrentUser().getEmail();
+		if (email.equals(entity.getProperty("createdBy")) == false) {
+			response.setStatus(403);
+			return null;
+		}
+		
+		entity.setProperty("title", title);
+		Datastore.put(entity);
 		
 		return null;
 	}

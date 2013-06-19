@@ -13,8 +13,8 @@ module Todo {
         todos:Model.Todo[];
 
         add:()=>void;
-        remove:(index)=>void;
-        modify:(index, modifiedValue)=>void;
+        remove:(index, id)=>void;
+        modify:(index, modifiedValue, id)=>void;
         newContent:string;
     }
 
@@ -25,8 +25,8 @@ module Todo {
             ];
 
             this.$scope.add = () => this.add();
-            this.$scope.remove = (index) => this.remove(index);
-            this.$scope.modify = (index, modifiedValue) => this.modify(index, modifiedValue);
+            this.$scope.remove = (index, id) => this.remove(index, id);
+            this.$scope.modify = (index, modifiedValue, id) => this.modify(index, modifiedValue, id);
 
             this.todoService.getList()
                 .success((todos:Model.Todo[]) => {
@@ -39,14 +39,18 @@ module Todo {
             var content = this.$scope.newContent;
             var todo = new Model.Todo({title:content});
             this.$scope.todos.push(todo);
+
+            this.todoService.add(content);
         }
 
-        remove(index):void {
+        remove(index, id):void {
             this.$scope.todos.splice(index, 1);
+            this.todoService.delete(id);
         }
 
-        modify(index,modifiedValue):void {
+        modify(index,modifiedValue, id):void {
             this.$scope.todos[index] = new Model.Todo({title:modifiedValue});
+            this.todoService.edit(id, modifiedValue);
         }
     }
 }

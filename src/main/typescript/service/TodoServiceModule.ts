@@ -28,5 +28,59 @@ module Service {
             };
             return wrapped;
         }
+
+        delete(id:number):ng.IHttpPromise {
+            var promise = this.$http.get("/delete?id="+id);
+            var wrapped:ng.IHttpPromise = {
+                success: (callback) => {
+                    promise.success((data, status, headers, config) => {
+//                        var resultList:Model.Todo[] = [];
+//                        data.forEach((data)=> {
+//                            resultList.push(new Model.Todo(data));
+//                        });
+                        callback(null, status, headers, config);
+                    });
+                },
+                error: promise.error,
+                then: promise.then
+            };
+            return wrapped;
+        }
+
+        edit(id:number, title:string):ng.IHttpPromise {
+            var promise = this.$http.get("/update?id="+id+"&title="+title);
+            var wrapped:ng.IHttpPromise = {
+                success: (callback) => {
+                    promise.success((data, status, headers, config) => {
+//                        var resultList:Model.Todo[] = [];
+//                        data.forEach((data)=> {
+//                            resultList.push(new Model.Todo(data));
+//                        });
+                        callback(null, status, headers, config);
+                    });
+                },
+                error: promise.error,
+                then: promise.then
+            };
+            return wrapped;
+        }
+
+        add(title:string):ng.IHttpPromise {
+            var promise = this.$http.get("/post?title="+title);
+            var wrapped:ng.IHttpPromise = {
+                success: (callback) => {
+                    promise.success((data, status, headers, config) => {
+//                        var resultList:Model.Todo[] = [];
+//                        data.forEach((data)=> {
+//                            resultList.push(new Model.Todo(data));
+//                        });
+                        callback(null, status, headers, config);
+                    });
+                },
+                error: promise.error,
+                then: promise.then
+            };
+            return wrapped;
+        }
     }
 }

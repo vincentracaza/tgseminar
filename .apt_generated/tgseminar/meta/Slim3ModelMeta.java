@@ -1,6 +1,6 @@
 package tgseminar.meta;
 
-//@javax.annotation.Generated(value = { "slim3-gen", "@VERSION@" }, date = "2013-06-14 10:15:04")
+//@javax.annotation.Generated(value = { "slim3-gen", "@VERSION@" }, date = "2013-06-19 08:05:20")
 /** */
 public final class Slim3ModelMeta extends org.slim3.datastore.ModelMeta<tgseminar.model.Slim3Model> {
 
